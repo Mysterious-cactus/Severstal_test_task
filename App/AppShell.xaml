@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Shell
+    x:Class="App.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:App"
+    xmlns:views="clr-namespace:App.UI"
+    Shell.FlyoutBehavior="Disabled">
+    
+    <TabBar>
+        <ShellContent
+            Icon="file_document_edit_outline.png"
+            Title="Notes"
+            ContentTemplate="{DataTemplate views:MainPage}">
+        </ShellContent>
+        <ShellContent
+            Icon="settings.png"
+            Title="Settings"
+            ContentTemplate="{DataTemplate views:SettingsPage}">
+        </ShellContent>
+    </TabBar>
+    
+
+</Shell>
